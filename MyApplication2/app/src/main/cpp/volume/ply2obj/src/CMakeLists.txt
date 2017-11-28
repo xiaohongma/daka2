@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+SET(LIBHELLO_SRC runply2obj.cpp ply2obj.c ply_io.c)
+#SET(LIBRARY_OUTPUT_PATH bin)
+ADD_LIBRARY(ply2obj SHARED ${LIBHELLO_SRC})
+TARGET_LINK_LIBRARIES(ply2obj -lm -llog)

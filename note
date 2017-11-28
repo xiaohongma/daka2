@@ -1,0 +1,24 @@
+CameraConnecionFragment.createCameraPreviewSession()---->
+TensorflowImageListener.initialize(AssetManager,RecognitionScoreView,Handler,Integer)---->
+TensorFlowImageClassifier.initializeTensorFlow(assetManager,labelFilename,numClasses,inputSize,imageMean,imageStd,inputName,outputName)---->
+TensorFlowInferenceInterface.initializeTensorFlow(assetManager,modelFilename)
+
+
+CameraConnecionFragment.createCameraPreviewSession()---->
+ImageReader.setOnImageAvailable(TensorflowImageListener,Handler)---->
+TensorflowImageListener.onImageAvailable(ImageReader)-->
+TensorFlowImageClassifier.recognizeImage(final Bitmap)-->
+TensorFlowInferenceInterface.readNodeFloat(outputName,outputs)
+
+
+TensorFlowClassifier.recognizeImage(final Bitmap)-->
+
+
+MyApplication ->bundler
+MyApplication2 ->pmvscmvs ssd_recon ply2obj
+MyApplication3 ->tensorflow in androidstudio
+tensorflow-master/example/androidtest ->tenslowflow jni .so
+../MyApplication -->tensorflow android ui
+
+
+pmvs->ssd(binary ply)-->ply(ascii ply)-->
